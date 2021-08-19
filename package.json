@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "compile": "rimraf build/server && tsc && copyfiles \"common/**/*.json\" \"server/**/*.json\" build/server -u 1",
+    "prestart": "rimraf build/server && tsc && copyfiles \"common/**/*.json\" \"server/**/*.json\" build/server -u 1",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
