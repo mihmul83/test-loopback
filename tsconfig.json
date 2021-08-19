@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build/server",
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "server/**/*.ts"
+  ]
+}

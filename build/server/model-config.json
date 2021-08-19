@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "Postgre"
+  },
+  "AccessToken": {
+    "dataSource": "Postgre",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "Postgre",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "Postgre",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "Postgre",
+    "public": false
+  },
+  "Item": {
+    "dataSource": "Postgre",
+    "public": true
+  },  
+  "UserModel": {
+    "dataSource": "elasticsearch-ssl"
+  }
+}
