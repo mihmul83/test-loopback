@@ -8,7 +8,7 @@
     "port": 17324,
     "url": "",
     "database": "test",
-    "password": "565458525",
+    "password": "test",
     "name": "Postgre",
     "user": "user",
     "connector": "postgresql"
